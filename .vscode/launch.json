@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "nodemon",
+        "runtimeExecutable": "nodemon",
+        "restart": true,
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "neverOpen",
+        "port": 9229,
+      },
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "client",
+        "url": "http://localhost:3000",
+        "webRoot": "${workspaceFolder}/src/client/src",
+      }
+  ],
+  "compounds": [
+    {
+      "name": "Server / Client",
+      "configurations": ["nodemon", "client"]
+    }
+  ]
+}

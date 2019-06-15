@@ -1,0 +1,13 @@
+node_modules
+npm-debug.log
+dist
+coverage
+.nyc_output
+.env
+
+dev.log
+app.log
+test.log
+
+client/build
+client/node_modules

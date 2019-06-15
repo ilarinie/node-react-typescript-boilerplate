@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "10"
+cache: npm
+env:
+  global:
+    - secure: "GZilCFn15LxPJLly+FF2OYBSZnsPsQN+0AZ1l1o1/F/xGxdbg0qLVqMFQwb4kj//Jza4ZzWmcWvcsbnfQazPoxoAvGR6nZh71nC+U5SOX93iKXWM+V+mfIDCGz4stjRnKUarm7zkj2rTQaGIfwpYeaTsNT0p6kWNXHTBVACXNdHKD/kYZQ58nTftmSiDiB94eNSYe01+bitaGjucl2nuM7DPqlsVXKHwBZBE3sG8Mm7ZKgIfYQRYebF2euAvTuZfCgnz5K+2I/3wV/l2EQIanznF3/rJdQipPUlF4seA2wNe0X2RZW/skO9jr5Sm+6Hpx6hMUnzSKLZ5XDIMjCsqZk/Px6++TAGBv9Sc1mCMFSGJJHIFD6xJqkU7U/eZpsoc+xpDgAVRzO9TBqkSgHGSylzN+Z+86KbLCJLqDkCMZm+bxSn2JuUoQ7axx4MTz/oPKXqBOlNqROVxBf4eic2IpvG4+vNpvHLP+3XCCoiX047LaznavzKA1QvohGe5JhIkD+ReDxkGfopX6vOv6d7Bj3bvzoop15d7pfoWIJOopDcDnfiB5EXH66otVWrbYIrPgauRFw2ARO7nlW0qUNsJT+1xh5gDbDc1nHWf6OSDaWCKL+V1EI5xT8UynbgmjjL6NV18SrW/U6rcuOIxFrMTZxnBtZ/yfsvY6G7IdVq9tOI="
+after_success:
+  - ./docker_deploy.sh

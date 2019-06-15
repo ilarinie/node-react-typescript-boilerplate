@@ -1,0 +1,6 @@
+{
+  "watch": ["server"],
+  "ext": "ts",
+  "ignore": ["server/test", "client", "cypress"],
+  "exec": "node node_modules/concurrently/bin/concurrently --kill-others-on-fail \"node --inspect -r ts-node/register ./server/index.ts\" \"cd client && npm start\""
+}

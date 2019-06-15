@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+.nyc_output/
+.env
+
+dev.log
+app.log
+test.log
+
+src/client/build/
+src/client/node_modules/
